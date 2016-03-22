@@ -137,6 +137,7 @@ public class Universe {
         double dt = Double.parseDouble(args[0]);
         while (true) {
             StdDraw.clear();
+            StdDraw.setPenColor(Color.red);
             newton.increaseTime(dt);
             newton.draw();
             StdDraw.show(10);
